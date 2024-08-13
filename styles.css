@@ -1,0 +1,72 @@
+*reset some default styles*/
+body,h1,h2,p,ul,li{
+    margin:0;
+    padding:0;
+}
+/*global styles*/
+body{
+    font-family:arial,sans-serif ;
+    line-height: 1.6;
+}
+header{
+background-color: rgb(255, 255, 255);
+color: rgb(8, 23, 160);
+text-align: center;
+padding: 1rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo img{
+    max-width: width 100px;
+    height: 240px;
+    width: 250px;
+}
+
+.header-content{
+    text-align: right;
+}
+
+nav{
+    background-color: rgb(160, 223, 235);
+}
+
+.menu{
+list-style: none;
+display: flex;
+justify-content: center;
+padding: 1rem 0;
+}
+.menu li{
+    margin:0 1rem;
+    position: relative;
+}
+.menu a{
+    color: rgb(60, 184, 153);
+    text-decoration:none;
+    transition: color 0.3s;
+}
+.menu a:hover{
+    color:rgb(25, 75, 212);
+}
+.submenu-content{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left:0;
+    background-color: rgb(17, 51, 95);
+    z-index: 1;
+}
+.submenu:hover .submenu-content{
+    display: block;
+}
+main{
+    padding: 2rem;
+font-family: serif;
+}
+footer{
+    background-color: rgb(233, 108, 114);
+    color: rgb(18, 137, 167);
+    text-align: center;
+}
